@@ -10,7 +10,7 @@ const Currencies = ({name, price, symbol, marketcap, volume, image, priceChange,
                 <div className={styles.currency_container}>
                     <div className={styles.currency_row}>
                         <div className={styles.currency}>
-                            <Image src={image} alt={name} className={styles.currency_img}/>
+                            <Image src={image} alt={name} className={styles.currency_img} width="30px" height="30px"/>
                             <h1 className={styles.currency_h1}>{name}</h1>
                             <p className={styles.currency_symbol}>{symbol}</p> 
                         </div>
