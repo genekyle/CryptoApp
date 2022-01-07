@@ -1,12 +1,13 @@
 import Layout from '../../components/Layout'
 import styles from './Currency.module.css'
+import Image from 'next/image'
 
 const Currency = ({currency}) => {
     return (
         <Layout>
             <div className={styles.currency_page}>
                 <div className={styles.currency_container}>
-                    <img src={currency.image.large} alt={currency.name} className={styles.currency_image}/>
+                    <Image src={currency.image.large} alt={currency.name} className={styles.currency_image}/>
                     <h1 className={styles.currency_name}>{currency.name}</h1>
                     <p className={styles.currency_ticker}>{currency.symbol}</p>
                     <p className={styles.currency_current}>{currency.market_data.current_price.usd} USD</p>
