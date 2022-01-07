@@ -7,7 +7,7 @@ const Currency = ({currency}) => {
         <Layout>
             <div className={styles.currency_page}>
                 <div className={styles.currency_container}>
-                    <Image src={currency.image.large} alt={currency.name} className={styles.currency_image}/>
+                    <Image src={currency.image.large} alt={currency.name} className={styles.currency_image} width="150px" height="150px"/>
                     <h1 className={styles.currency_name}>{currency.name}</h1>
                     <p className={styles.currency_ticker}>{currency.symbol}</p>
                     <p className={styles.currency_current}>{currency.market_data.current_price.usd} USD</p>
