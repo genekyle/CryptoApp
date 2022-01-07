@@ -1,5 +1,6 @@
 import styles from "./Currencies.module.css"
 import Link from 'next/link'
+import Image from "next/image"
 
 
 const Currencies = ({name, price, symbol, marketcap, volume, image, priceChange, id}) => {
@@ -9,7 +10,7 @@ const Currencies = ({name, price, symbol, marketcap, volume, image, priceChange,
                 <div className={styles.currency_container}>
                     <div className={styles.currency_row}>
                         <div className={styles.currency}>
-                            <img src={image} alt={name} className={styles.currency_img}/>
+                            <Image src={image} alt={name} className={styles.currency_img}/>
                             <h1 className={styles.currency_h1}>{name}</h1>
                             <p className={styles.currency_symbol}>{symbol}</p> 
                         </div>
