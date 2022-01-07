@@ -1,0 +1,21 @@
+.crypto_search{
+    width: 20rem;
+    display: flex;
+    align-items: center;
+}
+
+.crypto_input{
+    background: #222531;
+    color: #e2e2e2;
+    border: none;
+    padding: 16px;
+    border-radius: 4px;
+    outline: none;
+    height: 100%;
+    width: 100%;
+}
+
+.crypto_input::placeholder {
+    color: #e2e2e2;
+    
+}
